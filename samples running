@@ -1,0 +1,36 @@
+#Fabric Sample Code
+
+As an additional measure, you may want to add the bin subdirectory to your PATH environment variable, so these can be picked up without needing to qualify the PATH to each binary. You can do this by running the following:
+
+$ export PATH=$PWD/bin:$PATH
+
+To install the Hyperledger Fabric sample code which will be used in the tutorials, do:
+
+$ git clone https://github.com/hyperledger/fabric-samples.git
+
+$ cd fabric-samples/first-network
+
+
+
+Are you ready to get started? Run this command ( within the first-network folder ): 
+
+$ ./byfn.sh -m generate
+
+A brief description will appear, along with a Y/N command line prompt. Respond with a Y <Enter> to continue.
+
+This step generates all of the certificates and keys for all our various network entities, including the genesis block used to bootstrap the ordering service and a collection of configuration transactions required to create a channel.
+
+Next, you can start the network with the following command:
+
+$ ./byfn.sh -m up
+
+Another command line will appear, reply with Y <Enter> to continue.
+
+Logs will appear in the command line, showing containers being launched, channels being created and joined, chaincode being installed, instantiated, and invoked on all the peers, as well as various transaction logs.
+
+Troubleshooting Note:
+If you have difficulties with the two previous commands and you suspect that your Docker images may be at fault, you can start back from scratch, which will delete and untag the Docker images.
+
+$ docker rmi -f $(docker images -q)
+
+Once you run this command, return to the Installing Hyperledger Fabric Docker Images and Binaries page, at the beginning of this section.
