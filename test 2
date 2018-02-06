@@ -1,0 +1,7 @@
+Installing Node.js and npm
+
+Visit https://nodejs.org/en/download/ for details about installing or updating Node.js and npm for MacOS.
+
+Verify the installation,  as well as the versions of both Node.js and npm, and make sure the Node.js version you are installing is greater than v6.9 (do not use v7), and the npm version is greater than 3.x:
+
+$ node --version && npm --version
