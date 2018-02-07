@@ -1,0 +1,3 @@
+# To remove all docker containers and untag docker containers 
+
+$ docker rmi -f $(docker images -q)
