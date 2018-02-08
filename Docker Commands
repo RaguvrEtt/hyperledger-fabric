@@ -1,3 +1,13 @@
 # To remove all docker containers and untag docker containers 
 
 $ docker rmi -f $(docker images -q)
+
+Appendix: destroy a previous setup
+
+# If you've previously used an older version of Hyperledger Composer 
+# and are now setting up a new install, you may want to kill and remove all
+# previous Docker containers, which you can do with these commands:
+# To remove 
+    docker kill $(docker ps -q)
+    docker rm $(docker ps -aq)
+    docker rmi $(docker images dev-* -q)
