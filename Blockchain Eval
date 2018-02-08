@@ -1,0 +1,16 @@
+ When evaluating a particular blockchain platform, be sure to ask 
+ whether it fulfills the six requirements of safe peer-to-peer database sharing:
+ prevention of downtime and inconsistency, 
+ as well as transaction forgery, 
+ censorship, 
+ reversal and 
+ illegitimacy. 
+ And beware of explanations that consist of too much mumbling or hand waving – they probably mean that the answer is no.
+ 
+ 
+    Forgery: Transferring shares from one person to another without the sender’s permission.
+    Censorship: Refusing to fulfill someone’s request to transfer some shares elsewhere.
+    Reversal: Undoing a transfer that took place at some point in the past.
+    Illegitimacy: Changing the total quantity of shares in the system without a corresponding action by the issuer.
+    Inconsistency: Giving different responses to inquiries from different users.
+    Downtime: Not responding to incoming requests for information at all.
